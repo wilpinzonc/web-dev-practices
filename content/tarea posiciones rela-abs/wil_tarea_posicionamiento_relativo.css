@@ -1,0 +1,85 @@
+#caja1
+{
+width: 1000px;
+height: 1000px;
+border: 5px solid #5b9bd5;
+position: relative;
+margin:20px auto; /*esto pa centra la caja*/
+display: flex;           /* Activa el modo flexible */
+flex-direction: column;  /* Ordena los hijos uno debajo del otro */
+}
+#caja2
+{
+height: 150px;
+border: solid 3px #5b9bd5;
+background-color: #5b9bd5;
+position: relative;
+width: auto;
+margin: 30px; /* pa que el  nav ponga el ancho, y usamos margin en vez de leftwigth*/
+/*se ignora rigth si hay left, el ancho es igual al del padre */
+display: flex; /* pa poder acomodar las cajas abajo*/
+align-items: center;
+}
+#caja3
+{
+height:100px ;
+width: 200px;
+background-color: #FFC000;
+position: relative;
+float: left;
+position: relative;
+margin: 30px; 
+}
+#caja4
+{
+height: 100px;
+width: 250px;
+background-color: #FFC000;
+position: relative;
+float: right;
+margin: 30px; 
+flex: 1; /* con esto hago que la caja derecha se estire lo mas posible*/
+}
+#caja5
+{
+margin: 30px; /* pa que se alinea con la caja de arriba*/
+margin-top: 15px;
+height: 50px;
+background-color: lightgray;
+position: relative;
+display: flex;
+justify-content: space-between; /* con esto separo las cajas, el papa manda a los hijos*/
+align-items: center; /* pa centrar las cajas verticalmente*/
+padding: 5px; /* pa que no se peguen a los bordes*/
+}
+#caja6
+{
+height:40px;
+width: 200px;
+margin: 20px;
+background-color: blue;
+position: relative;
+}
+#caja7
+{
+height: 40px;
+width: 200px;
+background-color: blue;
+position: relative;
+width: 200px;
+}
+#caja8
+{
+height: 40px;
+background-color: blue;
+position: relative;
+width: 200px;
+}
+#caja9
+{
+margin: 30px;
+border: solid 3px green;
+background-color: green;
+position: relative;
+flex: 1; /* con esto hago que la caja verde se estire lo mas posible gracias al flexbox de la caja padre*/
+}

@@ -1,0 +1,27 @@
+header
+{
+    width: 990px;
+    height: 100px;
+    border: 2px solid red;
+    padding: 50px;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+
+/*elemento de bloque , zq ocupa todo el ancho de pantalla por defecto */
+div
+{
+    width: 500px;
+    height: 500px;
+    border: 4px dotted blueviolet;
+}
+
+/*span es un elemento de linea porque podemos poner varios de forma consecutiva*/
+/* al ser un elemento de linea no se le puede cambiar el tamano con width y heigth, hay que hacerlo
+con padding*/
+span
+{
+    border: 2px solid green;
+    padding: 50px;
+}

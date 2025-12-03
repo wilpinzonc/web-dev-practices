@@ -1,0 +1,86 @@
+#caja1
+{
+width: 1000px;
+height: 1000px;
+border: 5px solid #5b9bd5;
+position: absolute;
+left: 50px;
+right: 50px;
+}
+#caja2
+{
+height: 150px;
+left: 20px;
+right: 20px;
+top: 20px;
+border: solid 3px #5b9bd5;
+background-color: #5b9bd5;
+position: absolute;
+}
+#caja3
+{
+height:100px ;
+width: 250px;
+left: 20px;
+top: 20px;
+background-color: #FFC000;
+position: absolute;
+}
+#caja4
+{
+height: 100px;
+left: 290px;
+right: 20px;
+top: 20px;
+background-color: #FFC000;
+position: absolute;
+}
+#caja5
+{
+top: 190px;
+left: 20px;
+right: 20px;
+height: 50px;
+background-color: lightgray;
+position: absolute;
+}
+#caja6
+{
+
+width: 200px;
+background-color: blue;
+position: absolute;
+left: 20px;
+top: 5px;
+bottom: 5px;
+}
+#caja7
+{
+
+background-color: blue;
+position: absolute;
+left: 40%;
+top: 5px;
+width: 200px;
+bottom: 5px;
+}
+#caja8
+{
+
+background-color: blue;
+position: absolute;
+right: 20px;
+top: 5px;
+width: 200px;
+bottom: 5px;
+}
+#caja9
+{
+left: 20px;
+right: 20px;
+top: 260px;
+bottom: 20px;
+border: solid 3px green;
+background-color: green;
+position: absolute;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <title>Clase de Colores</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="clase, colores, html">
+    <head>
+
+    <title>COLORES</title>
+    <body background="arcoiris.png">
+        <h1>COLORES</h1>
+        <p>DALE CLICK PARA IR A <a href="verde.html" style="color: green">  VERDE</a> </p>
+        <br><br><br>
+        <p>DALE CLICK PARA IR A <a href="rojo.html" style="color: red">  ROJO</a> </p>
+        <br><br><br>
+        <p>DALE CLICK PARA IR A <a href="azul.html" style="color: rgb(95, 95, 148)">  AZUL</a> </p>
+        <br><br><br>
+
+
+        <p> FEELING LUCKY? <a href="enlaces.html" > MUAHAHHAHAA</a></p>
+
+        <!-- lo que hice aqui fue hacer una imagen de 500 por 500 y calcular las areas de los pixeles, las
+         coordenadas son, primer valor: es la distancia de y hacia la derecha, segundo valor: es la distancia de X desde 
+         arriba hacia abajo, tercer valor, punto final desde Y a la derecha, cuarto valor: punto final desde X hacia abajo
+         asi para cada cuadro-->
+        <p>Cuadro magico</p>
+        <img src="cuadro.png" alt:"cuadro" usemap="#magia" width="500" height="500">
+        <map name="#magia">
+            <area shape="rect" coords="0,0,250,250" alt="cuadro" href="rojo.html">
+            <area shape="rect" coords="250,250,500,0" alt="cuadro" href="azul.html">
+            <area shape="rect" coords="0,250,500,500" alt="cuadro" href="verde.html">
+        </map>
+
+
+    </body>
+
+

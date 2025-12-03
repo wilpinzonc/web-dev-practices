@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <title>Ejemplo de formularios</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="clase, imagenes, html">
+    <head>
+    </head>
+    <body>
+    <h1>Ejemplo del formulario</h1>
+    <br>
+
+
+<form method="post" action="" name="miformulario">
+ <fieldset>
+    <legend>   Datos peronales </legend>
+    <br>
+    Nombre:
+    <input type="text" name="nombre" placeholder="Teclea nombre" size="25" ><br><br>
+    Password:
+    <input type="password" name="password" placeholder="Teclea password" size="50" ><br><br>
+    Edad:
+    <br><br>
+    <input type="radio" name="edad" value="20-30"> 20-30 anios <br>
+    <input type="radio" name="edad" value="31-40"> 31-40 anios <br>
+    <input type="radio" name="edad" value="41-50"> 41-50 anios 
+    <br><br>
+ </fieldset>
+ <fieldset>
+    <legend> Datos academicos</legend>
+    <br>
+    Nivel de estudios:
+    <select name="nivel">
+        <option>Seleccione</option>
+        <option>ESO</option>
+        <option>Bachillerato</option>
+        <option>Ciclo formativo</option>
+        <option>Master</option>
+        <option>Doctorado</option>
+    </select>
+    <br><br>
+    Elige temas de interes:
+    <br><br>
+    <select size="4">
+        <option> Informatica</option>
+        <option>Desarrollo</option>
+        <option>Administracion de red</option>
+        <option>Gestion de redes</option>
+        <option>Programacion web</option>
+        <option>Sistemas informaticos</option>
+    </select>
+    <br><br>
+    Agregar Curriculum:
+    <input type="file" name="archivo">
+    <br><br>
+ </fieldset>
+    <fieldset>
+        Aficiones <br>
+        <input type = "checkbox" name='aficion1' value="deporte"> Deporte <br>
+        <input type = "checkbox" name='aficion2' value="cine"> Cine <br>
+        <input type = "checkbox" name='aficion3' value="videojuegos"> Videojuegos <br>
+    </fieldset>
+    <br><br>
+<fieldset>
+    <input type="submit" value="enviar los datos">
+    <input type="reset" value="Borrar los datos">
+    <button onclick="window.alert('Dafakyudoing')"> Boton de Javascript</button>
+
+</fieldset>
+
+
+
+</form>
+</body>
+</html
