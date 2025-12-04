@@ -44,7 +44,7 @@ if (Test-Path ".\$RootFolder") {
             ForEach ($File in $HtmlFiles) {
                 # Ruta web
                 $WebPath = "$RootFolder/$($Folder.Name)/$($File.Name)"
-                $BodyContent += "<a href='$WebPath' class='file-link'>VER: $($File.Name)</a>"
+                $BodyContent += "<a href='$WebPath' class='file-link'>$($File.Name)</a>"
             }
         }
         $BodyContent += "</div>"
