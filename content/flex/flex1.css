@@ -1,0 +1,38 @@
+/* construimos el contenedor*/
+*
+{
+    padding: 0px;
+    margin:0px;
+}
+
+.contenedor{
+ background-color: aquamarine;
+ width: 90%;
+ padding: 1%;
+ display : flex;
+  /* wrap : este lo que hace es que si no caben los posiciona en diferentes filas*/
+ /*nowrap hace que se ajusten a la linea */
+ justify-content: center; /* alinea los elementos en el centro */
+ align-items: center; /* los alinea verticalmente */
+ height: 25vh;
+}
+
+.elemento{
+    width: 10%;
+    padding: 1%;
+    margin: 2%;
+    background-color: white;
+    color: black;
+}
+.elementos:nth-child(1)
+{
+flex-shrink: 1;
+}
+.elementos:nth-child(2)
+{
+flex-shrink: 1;
+}
+.elementos:nth-child(3)
+{
+flex-shrink: 4;
+}

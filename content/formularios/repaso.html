@@ -1,0 +1,498 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<!-- ANCLAS-->
+<h1 id="arriba">Anclas</h1>
+    <a href="#abajo">Ir al final de la página</a>
+
+    <br><br><br><br><br><br>
+    
+    <p id="seccion1">Lorem prueba de anclas (Aquí aterriza el enlace)</p>
+
+    <br><br><br><br><br><br>
+    Lorem prueba de anclas (Aquí aterriza el enlace)</p>
+
+    <a href="#arriba">Dame click para volver arriba</a> 
+<div id="abajo"></div>
+<body>
+
+<!-- LISTAS-->
+  <title>TIPOS DE LISTAS</title>
+        <!--- aca empiezan las listas 
+        tiene atributos como ul lista desordenada, ol lista ordenada, li elemento de la lista-->
+        
+        <h2>Lista Desordenada</h2>
+        <ul type="circle">
+            <li><b> Elemento 1 </b></li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+
+        <h2>Lista Ordenada</h2>
+        <ol type="1">
+            <li>Elemento 1</li>
+             <li><b> Elemento 1.1 </b></li>
+            <li>Elemento 1.2</li>
+            <li>Elemento 1.3</li>
+            <li>Elemento 1.4</li></ol>
+
+
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ol>
+
+
+<!-- LISTA MEJORADO-->
+<h2>1. Lista Desordenada (type="square")</h2>
+    <ul type="square">
+        <li><strong>Elemento Importante</strong></li>
+        <li>Elemento normal</li>
+        <li>Elemento normal</li>
+    </ul>
+
+    <hr>
+
+    <h2>2. Lista Ordenada y Anidada</h2>
+    
+    <ol type="I">
+        
+        <li>
+            Tema Principal 1
+            <ol type="a">
+                <li><strong>Sub-tema 1.1</strong></li>
+                <li>Sub-tema 1.2</li>
+                <li>Sub-tema 1.3</li>
+            </ol> </li> <li>Tema Principal 2</li>
+
+        <li>Tema Principal 3</li>
+        
+    </ol>
+<!-- FORMULARIOS-->
+
+
+<form method="post" action="" name="miformulario">
+ <fieldset>
+    <legend>   Datos peronales </legend>
+    <br>
+    Nombre:
+    <input type="text" name="nombre" placeholder="Teclea nombre" size="25" ><br><br>
+    Password:
+    <input type="password" name="password" placeholder="Teclea password" size="50" ><br><br>
+    Edad:
+    <br><br>
+    <input type="radio" name="edad" value="20-30"> 20-30 anios <br>
+    <input type="radio" name="edad" value="31-40"> 31-40 anios <br>
+    <input type="radio" name="edad" value="41-50"> 41-50 anios 
+    <br><br>
+ </fieldset>
+ <fieldset>
+    <legend> Datos academicos</legend>
+    <br>
+    Nivel de estudios:
+    <select name="nivel">
+        <option>Seleccione</option>
+        <option>ESO</option>
+        <option>Bachillerato</option>
+        <option>Ciclo formativo</option>
+        <option>Master</option>
+        <option>Doctorado</option>
+    </select>
+    <br><br>
+    Elige temas de interes:
+    <br><br>
+    <select size="4">
+        <option> Informatica</option>
+        <option>Desarrollo</option>
+        <option>Administracion de red</option>
+        <option>Gestion de redes</option>
+        <option>Programacion web</option>
+        <option>Sistemas informaticos</option>
+    </select>
+    <br><br>
+    Agregar Curriculum:
+    <input type="file" name="archivo">
+    <br><br>
+ </fieldset>
+    <fieldset>
+        Aficiones <br>
+        <input type = "checkbox" name='aficion1' value="deporte"> Deporte <br>
+        <input type = "checkbox" name='aficion2' value="cine"> Cine <br>
+        <input type = "checkbox" name='aficion3' value="videojuegos"> Videojuegos <br>
+    </fieldset>
+    <br><br>
+<fieldset>
+    <input type="submit" value="enviar los datos">
+    <input type="reset" value="Borrar los datos">
+    <button onclick="window.alert('Dafakyudoing')"> Boton de Javascript</button>
+
+</fieldset>
+
+
+
+<!--TABLAS-->
+
+<table border="1">
+    <tr>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+    </tr>
+    <tr>
+        <th>Mates</th>
+        <th colspan="3" rowspan="2">Dibujo </th>
+        <th colspan="3">Historia </th>
+        <th colspan="3">HISTORIA</th>
+    </tr>
+    <tr>
+        <th>Fisica</th>
+        <th>MARTES</th>
+        <th>MIERCOLES</th>
+        <th>JUEVES</th>
+        <th>VIERNES</th>
+    </tr>
+    <tr>
+        <th>FISICA</th>
+        <th>MARTES</th>
+        <th>MIERCOLES</th>
+        <th>JUEVES</th>
+        <th>VIERNES</th>
+    </tr>
+    <tr>
+        <th>FISICA</th>
+        <th>MARTES</th>
+        <th>MIERCOLES</th>
+        <th>JUEVES</th>
+        <th>VIERNES</th>
+    </tr>
+</table>
+
+
+<!--TABLAS 2-->
+
+<table border="1">
+    <tr>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+    </tr>
+    <tr>
+        <th>Mates</th>
+        <th colspan="3" rowspan="2" height="50"> Dibujo </th>
+        <th rowspan="3">HISTORIA</th>
+    </tr>
+    <tr>
+        <th rowspan="3">Fisica</th>
+    </tr>
+    <tr>
+        <th>Descanso</th>
+        <th>Descanso</th>
+        <th>Descanso</th>
+    </tr>
+    <tr>
+        <th>Gimnasia</th>
+        <th>..futbolin..</th>
+        <th>Gimnasia</th>
+        <th>Mates</th>
+    </tr>
+</table>
+<br><br><br><br><br>
+
+<table border="1" cellspacing="1" cellpadding="8">
+    <tr>
+        <td colspan="7" align="center"> borde superior</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Borde <br> lateral</td>
+        <td colspan="4" align="center"> Cabecera</td>
+        <td rowspan="3"> Borde <br> lateral</td> 
+    </tr>
+    <tr>
+        <td>Menu <br>lateral</td>
+        <td align "center" rowspan="2" > Texto de la pagina <br> o <br>contenido
+        </td>
+    </tr>
+<tr>
+    <td>
+        <br>
+        <br>
+    </td>
+</tr>
+<tr>
+    <td colspan="8" align="center"> Borde inferior</td>
+</tr>
+
+<br><br><br>
+
+<!-- POSICIONAMIENTOS-->
+<!--
+### 1\. Position: RELATIVE (El Fantasma)
+
+  * **Comportamiento:** El elemento se mueve, pero su **espacio original se queda reservado** (como un fantasma). Los demás elementos NO ocupan su hueco.
+  * **Referencia:** Se mueve respecto a **sí mismo** (su posición original).
+  * **Uso clave:** Se usa en el **PADRE** para atrapar a los hijos absolutos.
+
+```css
+/* Se mueve 20px abajo, pero nadie ocupa su sitio original */
+.caja {
+    position: relative; 
+    top: 20px; 
+    left: 10px; 
+}
+```
+-----
+
+### 2\. Position: ABSOLUTE (El Volador)
+
+  * **Comportamiento:** Sale del flujo normal. **No ocupa espacio** (los demás elementos se le meten debajo). Flota sobre todo.
+  * **Referencia:** Se mueve respecto al **primer padre que tenga `position`** (o a la ventana si no hay ninguno).
+  * **Uso clave:** Para poner cosas en esquinas exactas o superponer elementos.
+
+```css
+/* Vuela libre y se pega a la derecha de su padre posicionado */
+.caja {
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+```
+----------------------------------------------------------------------------
+
+### LA REGLA DE ORO (Memoriza esto)
+
+Para controlar una caja absoluta y que no se escape, necesitas la combinación **"Padre Carcelero"**:
+
+1.  **Padre:** `position: relative;` (Crea la jaula).
+2.  **Hijo:** `position: absolute;` (Se mueve solo dentro de la jaula).
+
+```css
+/* EL TRUCO DEL EXAMEN */
+#padre {
+    width: 500px;
+    position: relative; /* ¡La jaula! */
+}
+
+#hijo {
+    position: absolute; /* El pájaro */
+    bottom: 0;          /* Pegado al suelo de la jaula */
+}
+```
+
+**Resumen en una frase:**
+
+  * **Relativo:** "Me muevo un poco, pero guardadme el sitio".
+  * **Absoluto:** "Me voy volando a donde me digan las coordenadas".
+-->
+
+
+
+<div id="caja1"> <!--div caja azul-->
+    <div id="caja2"> <!-- div caja azul solida-->
+        <div id="caja3"> <!-- caja amarilla izquierda--></div>
+        <div id="caja4"> <!--caja amarilla derecha --></div>
+    </div>
+
+    <div id="caja5"> <!-- caja gris, abajo las cajas azules-->
+        <div id="caja6"></div>
+        <div id="caja7"></div>
+        <div id="caja8"></div>
+    </div>
+
+    <div id="caja9"> <!-- gran caja verde de abajo --></div>
+
+</div>
+
+<!-- CSS DEL POSICIONAMIENTO ABSOLUTO
+#caja1
+{
+width: 1000px;
+height: 1000px;
+border: 5px solid #5b9bd5;
+position: absolute;
+left: 50px;
+right: 50px;
+}
+#caja2
+{
+height: 150px;
+left: 20px;
+right: 20px;
+top: 20px;
+border: solid 3px #5b9bd5;
+background-color: #5b9bd5;
+position: absolute;
+}
+#caja3
+{
+height:100px ;
+width: 250px;
+left: 20px;
+top: 20px;
+background-color: #FFC000;
+position: absolute;
+}
+#caja4
+{
+height: 100px;
+left: 290px;
+right: 20px;
+top: 20px;
+background-color: #FFC000;
+position: absolute;
+}
+#caja5
+{
+top: 190px;
+left: 20px;
+right: 20px;
+height: 50px;
+background-color: lightgray;
+position: absolute;
+}
+#caja6
+{
+
+width: 200px;
+background-color: blue;
+position: absolute;
+left: 20px;
+top: 5px;
+bottom: 5px;
+}
+#caja7
+{
+
+background-color: blue;
+position: absolute;
+left: 40%;
+top: 5px;
+width: 200px;
+bottom: 5px;
+}
+#caja8
+{
+
+background-color: blue;
+position: absolute;
+right: 20px;
+top: 5px;
+width: 200px;
+bottom: 5px;
+}
+#caja9
+{
+left: 20px;
+right: 20px;
+top: 260px;
+bottom: 20px;
+border: solid 3px green;
+background-color: green;
+position: absolute;
+}-->
+
+<!--POSICIONAMIENTO RELATIVO
+#caja1
+{
+width: 1000px;
+height: 1000px;
+border: 5px solid #5b9bd5;
+position: relative;
+margin:20px auto; /*esto pa centra la caja*/
+display: flex;           /* Activa el modo flexible */
+flex-direction: column;  /* Ordena los hijos uno debajo del otro */
+}
+#caja2
+{
+height: 150px;
+border: solid 3px #5b9bd5;
+background-color: #5b9bd5;
+position: relative;
+width: auto;
+margin: 30px; /* pa que el  nav ponga el ancho, y usamos margin en vez de leftwigth*/
+/*se ignora rigth si hay left, el ancho es igual al del padre */
+display: flex; /* pa poder acomodar las cajas abajo*/
+align-items: center;
+}
+#caja3
+{
+height:100px ;
+width: 200px;
+background-color: #FFC000;
+position: relative;
+float: left;
+position: relative;
+margin: 30px; 
+}
+#caja4
+{
+height: 100px;
+width: 250px;
+background-color: #FFC000;
+position: relative;
+float: right;
+margin: 30px; 
+flex: 1; /* con esto hago que la caja derecha se estire lo mas posible*/
+}
+#caja5
+{
+margin: 30px; /* pa que se alinea con la caja de arriba*/
+margin-top: 15px;
+height: 50px;
+background-color: lightgray;
+position: relative;
+display: flex;
+justify-content: space-between; /* con esto separo las cajas, el papa manda a los hijos*/
+align-items: center; /* pa centrar las cajas verticalmente*/
+padding: 5px; /* pa que no se peguen a los bordes*/
+}
+#caja6
+{
+height:40px;
+width: 200px;
+margin: 20px;
+background-color: blue;
+position: relative;
+}
+#caja7
+{
+height: 40px;
+width: 200px;
+background-color: blue;
+position: relative;
+width: 200px;
+}
+#caja8
+{
+height: 40px;
+background-color: blue;
+position: relative;
+width: 200px;
+}
+#caja9
+{
+margin: 30px;
+border: solid 3px green;
+background-color: green;
+position: relative;
+flex: 1; /* con esto hago que la caja verde se estire lo mas posible gracias al flexbox de la caja padre*/
+}
+
+-->
+<br><BR>
+
+</html>
+
+
+
+
+
+</body>
+
+
+</html>

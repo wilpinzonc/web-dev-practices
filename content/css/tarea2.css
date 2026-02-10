@@ -1,0 +1,76 @@
+
+/*clases colores letras*/
+.rojo
+{
+    color: red;
+}
+
+.verde
+{
+    color: green;
+}
+.pink
+{
+    color: rgb(239, 61, 239);
+}
+.morado
+{
+    color: purple;
+}
+.orange
+{
+    color: orange;
+}
+.borderojo
+{
+    border: 2px solid red;
+}
+.bordenegro
+{
+    border: 2px solid black;
+}
+.bordepink
+{
+    border: 2px solid rgb(239, 61, 239);
+}
+.bordeverde
+{
+    border: 2px solid green;
+}
+.bordenaranja
+{
+    border: 2px solid orange;
+}
+
+/*id colores backgrounds*/
+#amarillo
+{
+    background-color: yellow;
+}
+
+#gris
+{
+    background-color: lightgray;
+}
+
+#negro
+{
+    background-color: black;
+}
+
+/* etiquetas*/
+
+h1
+{
+ color: red;
+}
+
+p
+{
+    color: green;
+}
+
+h2
+{
+    color: orange;
+}

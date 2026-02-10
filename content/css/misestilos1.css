@@ -1,0 +1,22 @@
+
+/* creamos la clase azul, */
+.azul
+{
+    color: blue;
+    background-color: aquamarine;
+    font: arial;
+
+}
+
+/* regla por id, se le da al elemento que tenga esa ID*/
+#c1
+{
+    color: brown;
+    background-color: orange;
+}
+/* regla por etiqueta, se le da a los elementos que se declaran por esa etiqueta*/
+table
+{
+    background-color:  pink;
+    color: aqua;
+}

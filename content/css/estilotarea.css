@@ -1,0 +1,53 @@
+/* ejemplo por clase*/
+.fondo1
+{
+    background-color: yellow;
+}
+
+/**.fondo2, es mejor asi pero hice el otro solo para hacer un ejm diferente
+{
+    background-color: gray;
+
+} */
+
+.fondo3
+{
+    background-color: black;
+}
+
+.letrablanca
+{
+    color: white;
+}
+/*ejemplo por id*/
+
+#a1
+{    color: blue;
+ }
+
+#a2
+{
+    color: green;
+}
+
+#amarillo
+{
+    color: yellow;
+}
+
+#rojo
+{
+    color: red;
+}
+#azul
+{
+    background-color: blue;
+}
+
+/*ejemplo por etiqueta*/
+div
+{
+    background-color: gray;
+}
+
+
