@@ -16,4 +16,12 @@ He desarrollado un script en **PowerShell** (`generar-web.ps1`) que actúa como 
 2.  **Detecta** las nuevas carpetas y ejercicios HTML añadidos.
 3.  **Genera** automáticamente el código HTML del Dashboard principal.
 
+
+## Recordar:
+Deben ejecutar:  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+para permitir la ejecucion del script.
+
+Deben moverse a la carpeta donde se encuentra para ejecutarlo en Powershell.
+
+
 Repositorio mantenido por [Wilson Pinzon]
