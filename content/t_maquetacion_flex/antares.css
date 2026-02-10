@@ -1,0 +1,278 @@
+
+/* Wilson Pinzon*/
+/* Separe con guiones para ver mejor las secciones que use para guiarme*/
+/* construimos el contenedor*/
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+
+/*PRIMER DIV, HEADER -----------------------------------------------------------------------------------------------*/
+.header
+{
+    background-color: #000;    
+    padding: 15px;
+    display: flex;               
+    justify-content: space-between; /* pone espacio y manda los 2 acada esquina*/
+    align-items: center;  /* alinea vert al centro */
+}
+.logo
+{
+ color: white; /* letras al lado del logo */
+ font-family: sans-serif;
+ font-size: 24px;
+ font-weight: bold;
+}
+.logo img
+{
+    height: 50px; /* tamaño del logo */
+    width: 50px; 
+}
+.nav ul 
+{
+    display: flex;       /* Lista en fil*/
+    list-style: none;    /* Quita los puntos de la lista */
+    gap: 20px;           /* Espacio entre cada enlace */
+    margin: 0;
+    padding: 0;
+}
+.nav a 
+{
+    text-decoration: none; /* Quita el subrayado azul */
+    color: white;           /* Texto blanco */
+    font-family: sans-serif; /* Fuente sans-seif */
+}
+
+/* SEGUNDO DIV, HERO-----------------------------------------------------------------------------------------------*/
+.contenedor2 
+{
+    /*Para la imagen de fondo*/
+    height: 50vh; /* Tamanio imagen de fondo */
+    background-image: linear-gradient(rgba(0, 56, 110, 0.5), rgba(0, 56, 110, 0.5)), url('hero.jpg'); /*Cuando lo hice no se veia bien, tuve que agregarle eso */
+    /*se pone el gradiente, el color de inicio, el color de fin  y el 0.5 es la intensidad*/
+    background-size: cover;   /* La imagen cubre todo el espacio sin deformarse */
+    background-position: center; /* Centra la imagen */
+    
+    /*Para el texto*/
+    color: white;
+    text-align: center; /* Para que las frases largas se centren */
+    font-family: sans-serif;
+    
+    /* 3. aca acomodo el flexbox*/
+    display: flex;
+    flex-direction: column; /* Pone el texto arriba y botón abajo */
+    justify-content: center; /* Centrado Vertical */
+    align-items: center;     /* Centrado Horizontal */
+    gap: 30px;               /* Espacio entre el bloque de texto y el botón */
+}
+/* truquitos pal boton negro el botón negro */
+.boton-negro {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;      /* Más gordito el botón, mas espacio negro si no queda todo pegado */
+    text-decoration: none;   /* Sin subrayado */
+    font-weight: bold;      /*pa que se vea bold el texto*/
+    border-radius: 4px;      /* Bordes un poco redondeados */
+    border: 2px solid white; /* un poquito de color al borde pa que resalte*/
+}
+
+/* Efecto al pasar el mouse por el botón (Hover) */
+.boton-negro:hover {
+    background-color: #333;  /* Se pone gris oscuro */
+}
+
+/* TERCER DIV, SOLUCIONES------------------------------------------------------------------------------------------------*/
+.contenedor3 
+{
+    padding: 60px 20px;      /* espacio arriba y a los lados*/
+    text-align: center;      /* Centra el título H2 y el texto de los de abajo */
+    background-color: white;  
+}
+.contenedor3 h2 
+{
+    margin-bottom: 20px;     /* Separa el título de lo de abajo*/
+    color: black;
+}
+.grupo-tarjetas /*aca edito como se comportan las cajitas*/
+{
+    display: flex;           /* Pone las cartas en fila horizontal */
+    justify-content: center; /* Las centra en la pantalla */
+    gap: 30px;               /* Espacio entre carta y carta */
+}
+.caja3_1 {/*aca edito como se ve cada cajita*/
+    width: 300px;            /* Ancho fijo para que sean iguales */
+    padding: 30px;           /* Espacio interno */
+    border: 1px solid #c0bfbf;  /* Un borde sutil (opcional) */
+    border-radius: 8px;      /* Bordes redondeados */
+    display: flex;
+    flex-direction: column;
+}
+.caja3_1 h3 
+{ /* titulo dentro del cajon */
+    margin-bottom: 15px;
+}
+.caja3_1 p 
+{
+    margin-bottom: 12px;     /* Espacio antes del botón pa que no quede pegado el*/
+}
+
+/* 4. BOTÓN DE LAS TARJETAS */
+.boton-negro-soluciones {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: auto; /*si no pongo esto los botones quedan desalineados entre ellos*/
+}
+
+.boton-negro-soluciones:hover {
+    background-color: #333; /* Efecto al pasar el mouse */
+}
+/* FOOTER---------------------------------------------------------------------------------------------------------------*/
+.footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 1%;
+    display : flex;
+    justify-content: center; /* alinea los elementos en el centro */
+    align-items: row; /* los alinea verticalmente */
+    height: 5vh;
+}
+/*PAGINA 2 E-LEARNING---------------------------------------------------------------------------------------------------------------------*/
+.contenedor2-1 
+{
+    height: 50vh;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    
+    /* posicion con el flex */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; /* Centrado verticalmente */
+    
+    /* ALINEACIÓN */
+    align-items: flex-start; /* Pega todo a la izquierda */
+    text-align: left;        
+    gap: 10px;               
+    /* 0 arriba/abajo, 10% a los lados (izquierda/derecha) */
+    padding: 5% 2%;          
+}
+.contenedor2-1 ul {
+    padding-left: 20px; /* Espacio para que "quepan" los puntos redondos */
+    margin-left: 20px;  /* Un poco más de margen para separarlo del borde */
+    line-height: 1.6;   /* Separa un poco las líneas para que se lea mejor */
+}
+/* truquitos pal boton negro el botón negro */
+
+.boton-negro-elearning {
+background-color: black;
+color: white;
+padding: 15px 30px;      /* Más gordito el botón, mas espacio negro si no queda todo pegado */
+text-decoration: none;   /* Sin subrayado */
+font-weight: bold;      /*pa que se vea bold el texto*/
+border-radius: 4px;      /* Bordes un poco redondeados */
+}
+
+/*PAGINA 3 CONTENIDOS---------------------------------------------------------------------------------------------------------------------*/
+.contenedor2-2 
+{  
+    min-height: auto; 
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /* Esto alinea el texto a la izq */
+    text-align: left;        
+    justify-content: flex-start; 
+    gap: 20px; 
+    padding: 5% 5% 50px 5%; 
+}
+.contenedor2-2 ul 
+{
+    padding-left: 0;
+    margin-left: 20px; 
+    line-height: 1.6; 
+    list-style-type: none; 
+}
+.contenedor2-2 li::before /*Podria simplemente eliminar las bolitas ye ditar el texto en el html poniendo un guion antes de cada linea*/
+{
+    content: "- "; 
+    font-weight: bold; 
+    margin-right: 5px; 
+}
+.boton-negro-contenidos 
+{
+    background-color: black;
+    color: white;
+    padding: 15px 30px;      
+    text-decoration: none;   
+    font-weight: bold;      
+    border-radius: 4px;      
+    border: none;
+    cursor: pointer;
+}
+.boton-negro-contenidos:hover 
+{
+    background-color: gray; /* Gris oscuro al pasar el mouse */
+}
+
+/* el pinche centrado del form */
+.seccion-formulario 
+{
+    width: 100%;          /* Ocupa todo el espacio horizontal disponible */
+    margin-top: 40px;     /* Separación con el texto de arriba */
+    text-align: left;     /* Asegura que el título H2 se alinee a la izquierda */
+    margin-bottom: 100px; /* agrega espacio abajo que antes estaba pegado */
+    font-family: sans-serif;
+}
+
+.seccion-formulario h1 
+{
+    margin-bottom: 10px;
+    margin-left: 70px;
+    font-family: sans-serif;
+}
+.mi-formulario {
+    
+    width: 70%;         /*ancho pal form*/  
+    max-width: 800px;     
+    margin: 0 auto;       /* 0 arriba/abajo, AUTO a los lados (esto lo centra horizontalmente) */
+    display: flex; /* config Flexbox normal */
+    flex-direction: column;
+    gap: 15px; 
+}
+.mi-formulario label 
+{
+    font-weight: bold;
+    margin-bottom: 5px; 
+    font-family: sans-serif;
+}
+.mi-formulario input 
+{
+    padding: 10px;
+    border: 1px solid gray; 
+    border-radius: 4px;     
+    width: 100%;            
+    box-sizing: border-box; 
+}
+/* FILA DEL CORREO Y el pinshe BOTÓN que no se dejaba mover*/
+.fila-correo-boton /*esto pa que quede ocupadno toda la linea y no quede todo a la izq*/
+{
+    display: flex;          
+    gap: 10px;              
+    align-items: stretch;   
+}
+
+.fila-correo-boton input 
+{
+    flex-grow: 1;           
+    width: auto;            /*ancho pa que el boton no quede todo cuadrado grande*/
+}

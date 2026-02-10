@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>  
+    <style>
+        #c1 {
+            width: 200px;
+            height: 100px;
+            position: absolute; /*para posicionar el avión en la pantalla */
+            z-index: 2; /* El avión vuela sobre las nubes en la capa 2 */
+            background-image: url('F18.png');
+            background-size: contain; /*ajusta la imagen al tamaño del div*/
+            background-repeat: no-repeat; /*solo sale 1 avion*/
+            animation: animacion1 2s infinite linear;
+        }
+        @keyframes animacion1 {
+            0%   { top: 200px; left: -100px;}
+            50%  { top: 220px; left: 210px; } 
+            100% { top: 200px; left: 13000px; } /*agregue valor neg al comienzo y uno grande al final pa q se desplace*/
+        }
+
+        #nubes {
+            position: fixed; /* Fijado a la pantalla */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; 
+            background-image: url('nubes.jpg');
+            background-repeat: repeat-x; /*repite la imagen horizontalmente*/
+            background-size: cover; /*pa que cubra todo el fondo*/
+            z-index: 1; /* las nubes quedan en la capa1 pa que no tapen el avion*/
+            animation: movimientonubes 20s linear infinite; /*animacion de las nubes, dura 20s, 
+            lineal y se repite infinitamente*/
+        } 
+        @keyframes movimientonubes {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -2000px 0; /*desplaza la imagen internamente*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="c1"></div>
+    <div id="nubes"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tablero {
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+/* aca s epuso elflex column para apilar las filas una encima de otra */
+.fila {
+    display: flex;
+}
+.casilla {
+    width: 80px;
+    height: 80px;
+    background-color: white; 
+}
+
+.casilla:nth-child(2),
+.casilla:nth-child(4),
+.casilla:nth-child(6),
+.casilla:nth-child(8) {
+    background-color: #222;
+}
+
+.fila:nth-child(2),
+.fila:nth-child(4),
+.fila:nth-child(6),
+.fila:nth-child(8) {
+    flex-direction: row-reverse;
+}
+
+/*otra opcion seria decir que pinte las filas pares de una manera y las impares de otra*/

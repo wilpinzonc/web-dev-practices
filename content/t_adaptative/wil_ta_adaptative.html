@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="widh=device-width, initial-scale=1.0">
+    <style>
+        /*arme el de pc como base y acomode para tablet y movil*/
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: black;
+        }
+        .header{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        .logo img{
+            width: 200px;
+            padding: 10px;
+        }
+        .nav{
+            background-color: orange;
+            width: 100%;
+        }
+        .nav ul{
+            display: flex;
+            justify-content: flex-end; /*esto empuja le menu a la derecha*/
+            list-style: none; /*quita los puntos de lista*/
+            margin:0;
+            padding:0;
+        }
+        .nav a{
+            text-decoration: none; /*quita la linea debajo*/
+            color: white;
+            padding: 15px 25px;
+            display: block; /*lo muestra un poco mas acnha la linea del div*/
+            font-weight: bold;
+        }
+        .contenedor3{
+            max-width: 1200px;
+            margin: 0 auto; /*mantiene acomodado al centro*/
+            padding: 20px;
+        }
+        .tarjetas {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .tarjetas img{
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .boton-comprar{
+            background-color: orange;
+            color: white;
+            padding: 8px 15px; /*pa hacer mas gordito el boton*/
+            text-decoration: none; /*pa qutar la linea blanca*/
+            border-radius: 3px; /*redondeo un pco el borde*/
+        }
+        /*pa la tablet*/
+        @media screen and (max-width: 1024px) {
+            .nav ul{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+            }
+            .tarjetas {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4{
+                flex-basis: 45%; /* Aprox 2 columnas */
+                margin-bottom: 30px;
+            }
+        }
+        /*pal movil*/
+        @media screen and (max-width: 600px) {
+            /* El menú pasa a ser vertical  */
+            .nav ul {
+                flex-direction: column;
+            }
+            /* Las tarjetas pasan a ser 1 por fila*/
+            .tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4{
+                flex-basis: 100%;
+                margin-bottom: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="logo.png" alt="TUSMASCOTAS"> 
+    </div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">SERVICIOS</a></li>
+            <li><a href="#">EMPRESA</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="contenedor3">
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+    <div class="tarjetas">
+        <div class="tarjeta1">
+            <img src="comida1.jpg" alt="comida1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur odio molestias minima tempore modi...</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+
+        <div class="tarjeta2">
+            <img src="comida2.jpg" alt="comida2">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur odio molestias minima tempore modi...</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+
+        <div class="tarjeta3">
+            <img src="comida3.jpg" alt="comida3">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur odio molestias minima tempore modi...</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+
+        <div class="tarjeta4">
+            <img src="comida4.jpg" alt="comida4">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur odio molestias minima tempore modi...</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
